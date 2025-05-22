@@ -1,5 +1,5 @@
 # 1. Use the official Node.js image
-FROM node:18-alpine
+FROM node:22-alpine
 
 # 2. Set the working directory inside the container
 WORKDIR /app
@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # 5. Build the Next.js project
-RUN npm run build
+#RUN npm run build
 
 # 6. Expose port 3000
 EXPOSE 3000
